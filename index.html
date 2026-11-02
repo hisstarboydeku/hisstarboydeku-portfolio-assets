@@ -481,13 +481,13 @@
         </div>
 
         <div class="post-caption">
-          <h3>Neymar Edit 🖤</h3>
+          <h3>Satoru Gojo</h3>
           <p>The magic, flair, and pure skill of Neymar Jr. Rate this edit from 1 to 10!</p>
         </div>
 
         <div class="post-media-wrap">
           <video class="post-video" controls poster="neymar-poster.jpg" preload="metadata">
-            <source src="neymar-edit.mp4" type="video/mp4">
+            <source src="satorugojo-edit.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
@@ -578,12 +578,12 @@
           <div class="fb-body"><h4>NF</h4><p>Real lyrics, real emotion. Every album hits.</p></div>
         </article>
         <article class="fb-card">
-          <div class="fb-thumb"><img src="peaky-blinders.jpg" alt="Peaky Blinders"><span>Series</span></div>
+          <div class="fb-thumb"><img src="jujutsukaisen.jpg" alt="Jujutsu Kaisen"><span>Series</span></div>
           <div class="fb-body"><h4>Peaky Blinders</h4><p>By order of the Peaky Blinders. Masterpiece storytelling.</p></div>
         </article>
         <article class="fb-card">
-          <div class="fb-thumb"><img src="fast-and-furious.jpg" alt="Fast & Furious"><span>Movie</span></div>
-          <div class="fb-body"><h4>Fast &amp; Furious</h4><p>Family. Speed. Legacy. The ultimate ride.</p></div>
+          <div class="fb-thumb"><img src="jujutsujaisen0.jpg" alt="Jujutsu Kaisen0"><span>Movie</span></div>
+          <div class="fb-body"><h4>Fast &amp; Furious</h4><p>Yuta Redemption</p></div>
         </article>
         <article class="fb-card">
           <div class="fb-thumb"><img src="freefire.jpg" alt="Free Fire"><span>Game</span></div>
@@ -895,7 +895,7 @@
           const text = btn.getAttribute("data-copy");
           try {
             await navigator.clipboard.writeText(text);
-            showToast("Copied to clipboard 🖤");
+            showToast("Copied to clipboard");
           } catch {
             const input = document.createElement("input");
             input.value = text;
@@ -903,12 +903,12 @@
             input.select();
             document.execCommand("copy");
             document.body.removeChild(input);
-            showToast("Copied to clipboard 🖤");
+            showToast("Copied to clipboard🖤");
           }
         });
       });
 
-      /* ---------- Neymar Post Like Button Toggle ---------- */
+      /* ---------- Satoru Gojo Post Like Button Toggle ---------- */
       const likeBtn = document.getElementById("likeBtn");
       const likeCount = document.getElementById("likeCount");
       let isLiked = true;
@@ -922,7 +922,7 @@
           if (isLiked) {
             likeCount.textContent = "1 Million";
             if (textEl) textEl.textContent = "Liked";
-            showToast("You liked Neymar Edit 🖤");
+            showToast("You liked Satoru Gojo Edit");
           } else {
             likeCount.textContent = "999,999";
             if (textEl) textEl.textContent = "Like";
